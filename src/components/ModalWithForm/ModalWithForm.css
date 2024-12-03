@@ -9,10 +9,15 @@
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.4s, opacity 0.4s ease;
 }
 
 .modal_opened {
   visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s ease, visibility 0s 0.4s;
+  transition-delay: 0.1s;
 }
 
 .modal__title {
@@ -149,10 +154,11 @@
   font-family: "Cabinet Grotesk", sans-serif;
   border: none;
   border-radius: 4px;
+  background-color: #000;
   color: #ffffff;
   font-size: 16px;
   line-height: 20px;
-  background-color: #0000004d;
+
   height: 36px;
   width: 124px;
   margin-top: px;
@@ -160,5 +166,5 @@
 }
 
 .modal__submit:hover {
-  background-color: #000;
+  background-color: #0000004d;
 }
