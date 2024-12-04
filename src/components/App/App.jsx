@@ -48,7 +48,7 @@ function App() {
       <ModalWithForm
         title="New Garment"
         buttonText="Add Garment"
-        activeModal={activeModal}
+        isOpen={activeModal === "add-garment"}
         onClose={closeActiveModal}
       >
         <label htmlFor="name" className="modal__label">
@@ -65,7 +65,7 @@ function App() {
           <input
             type="url"
             className="modal__input"
-            id="name"
+            id="imageUrl"
             placeholder="Image URL"
           />
         </label>
@@ -107,7 +107,7 @@ function App() {
         </fieldset>
       </ModalWithForm>
       <ItemModal
-        activeModal={activeModal}
+        isOpen={activeModal === "preview"}
         card={selectedCard}
         onClose={closeActiveModal}
       />
