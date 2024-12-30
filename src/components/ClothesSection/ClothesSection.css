@@ -1,0 +1,27 @@
+.clothes-section {
+  margin-top: 19px;
+}
+
+.clothes-section_content {
+  display: flex;
+}
+
+.clothes-section_button {
+  cursor: pointer;
+  border: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-left: 20px;
+  background-color: #f3f3f3;
+}
+
+.clothes-section_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  gap: 20px;
+  margin-top: 16px;
+}
