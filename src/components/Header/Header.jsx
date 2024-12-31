@@ -2,7 +2,7 @@ import "./Header.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.svg";
 import avatar from "../../assets/avatar.png";
-import ToggleSwitch from "../../ToggleSwitch/ToggleSwitch";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
 function Header({ handleAddClick, weatherData }) {
   const currentDate = new Date().toLocaleString("default", {
