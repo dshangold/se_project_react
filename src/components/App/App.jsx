@@ -72,10 +72,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    api.getItems().then((items) => {
-      console.log(items);
-      setClothingItems(items.reverse()).catch(console.error);
-    });
+    api
+      .getItems()
+      .then((items) => {
+        console.log(items);
+        setClothingItems(items.reverse());
+      })
+      .catch(console.error);
   }, []);
 
   const handleAddItemSubmit = (item) => {
