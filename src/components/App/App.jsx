@@ -10,7 +10,7 @@ import ItemModal from "../ItemModal/ItemModal";
 import Profile from "../Profile/Profile";
 import { getWeather, processWeatherData } from "../../utils/weatherApi";
 import { CurrentTemperatureUnitContext } from "../../contexts/CurrentTemperatureUnitContext";
-import AddItemModal from "../../AddItemModal/AddItemModal";
+import AddItemModal from "../AddItemModal/AddItemModal";
 import api from "../../utils/api";
 
 function App() {
@@ -73,12 +73,13 @@ function App() {
       .catch((err) => console.log(err));
   };
 
-  const handleCardDelete = () => {
-    console.log(`Deleting item with id: ${card._id}`);
+  const handleCardDelete = (card) => {
     api
       .deleteItem(card._id)
       .then(() => {
-        setClothingItems(clothingItems.filter((c) => c.__id !== card._id));
+        setClothingItems((prevItems) =>
+          prevItems.filter((c) => c._id !== card._id)
+        );
         closeActiveModal();
       })
       .catch((err) => console.log(err));
@@ -102,6 +103,7 @@ function App() {
                   onCardClick={handleCardClick}
                   clothingItems={clothingItems}
                   handleCardDelete={handleCardDelete}
+                  handleAddClick={handleAddClick}
                 />
               }
             />
@@ -112,6 +114,7 @@ function App() {
                   onCardClick={handleCardClick}
                   clothingItems={clothingItems}
                   handleCardDelete={handleCardDelete}
+                  handleAddClick={handleAddClick}
                 />
               }
             />

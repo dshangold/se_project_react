@@ -2,13 +2,13 @@
 import ItemCard from "../ItemCard/ItemCard";
 import "./ClothesSection.css";
 
-function ClothesSecton({ onCardClick, onAddNewClick, clothingItems }) {
+function ClothesSection({ onCardClick, handleAddClick, clothingItems }) {
   return (
     <div className="clothes-section">
       <div className="clothes-section_content">
-        <p>Your Items</p>
+        <p className="clothes-section_title">Your Items</p>
         <button
-          onClick={onAddNewClick}
+          onClick={handleAddClick}
           type="button"
           className="clothes-section_button"
         >
@@ -26,4 +26,4 @@ function ClothesSecton({ onCardClick, onAddNewClick, clothingItems }) {
   );
 }
 
-export default ClothesSecton;
+export default ClothesSection;
