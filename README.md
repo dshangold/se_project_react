@@ -13,28 +13,3 @@ Feel free to provide feedback - always looking to improve!
 **Github**
 
 [Link to Github](https://github.com/dshangold/se_project_react)
-
-**Images Used**
-
-![Alt text](../se_project_react/src/assets/avatar.png)
-![Alt text](../se_project_react/src/assets/logo.svg)
-
-**Day Images**
-
-![Alt text](../se_project_react/src/assets/day/clear.png)
-![Alt text](../se_project_react/src/assets/day/cloudy.png)
-![Alt text](../se_project_react/src/assets/day/default.png)
-![Alt text](../se_project_react/src/assets/day/fog.png)
-![Alt text](../se_project_react/src/assets/day/rain.png)
-![Alt text](../se_project_react/src/assets/day/snow.png)
-![Alt text](../se_project_react/src/assets/day/storm.png)
-
-**Night Images**
-
-![Alt text](../se_project_react/src/assets/night/clear.png)
-![Alt text](../se_project_react/src/assets/night/cloudy.png)
-![Alt text](../se_project_react/src/assets/night/default.png)
-![Alt text](../se_project_react/src/assets/night/fog.png)
-![Alt text](../se_project_react/src/assets/night/rain.png)
-![Alt text](../se_project_react/src/assets/night/snow.png)
-![Alt text](../se_project_react/src/assets/night/storm.png)
