@@ -1,8 +1,8 @@
-# Project 10: Weather App
+# Project 14: WTWR
 
 ### Overview:
 
-I'm building a weather app that provides weather based on location and provides suggestions on what to wear based on the weather. REACT is the bulding block of this project. Basic html & css is used to build different components of the project and REACT/JS are used throughout for functionality and rendering purposes.
+I've added new functionality to my previous project WTWR. Now, You have the ability to register on the website and create your own profile. You can also login and logout. I added authorization so that the items that you add to the website are only accessible if you are logged into your profile. You can now also edit your own profile image and name, as well as like and unlike pictures that you've added. The front end of this project is connected to a MongoDB built in express. The link to the backend repository is here [Link to the backend repository](https://github.com/dshangold/se_project_express)
 
 Feel free to provide feedback - always looking to improve!
 
