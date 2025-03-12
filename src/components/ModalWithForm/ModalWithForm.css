@@ -32,7 +32,7 @@
   position: absolute;
   top: 20px;
   right: 28px;
-  background: url("../../assets/close.svg");
+  background: url("../../assets/closebutton.svg");
   background-repeat: no-repeat;
   background-color: transparent;
   width: 16px;
@@ -40,6 +40,10 @@
   border: none;
   padding: 0;
   cursor: pointer;
+}
+
+.modal__close-preview {
+  background: url("../../assets/close.svg");
 }
 
 .modal__content {

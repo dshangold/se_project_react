@@ -41,7 +41,22 @@
   line-height: 24.8px;
 }
 
+.modal__button {
+  background: none;
+  font-family: "Cabinet Grotesk", Arial, Helvetica, sans-serif;
+  border: none;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
 .header__link {
   text-decoration: none;
   color: #000;
+}
+
+.header__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
 }

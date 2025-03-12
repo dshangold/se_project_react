@@ -1,8 +1,10 @@
 .card {
   width: 325px;
+  height: 326px;
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .card__name {
@@ -23,4 +25,21 @@
   width: 100%;
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.card__like {
+  width: 18px;
+  height: 15px;
+  border: none;
+  background-image: url(../../assets/likebuttondefault.svg);
+  position: absolute;
+  top: 20px;
+  right: 80px;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.card__like_active {
+  background-image: url(../../assets/likebuttonactive.svg);
 }
