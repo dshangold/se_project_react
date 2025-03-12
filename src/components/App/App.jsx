@@ -179,8 +179,8 @@ function App() {
         console.log("API Response", updatedUser.data);
         setCurrentUser((prevUser) => ({
           ...prevUser,
-          name: updatedUser.data.name,
-          imageUrl: updatedUser.data.avatar,
+          name: updatedUser.name,
+          imageUrl: updatedUser.avatar,
         }));
         closeActiveModal();
       })
