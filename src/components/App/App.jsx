@@ -180,7 +180,7 @@ function App() {
         setCurrentUser((prevUser) => ({
           ...prevUser,
           name: updatedUser.name,
-          imageUrl: updatedUser.avatar,
+          avatar: updatedUser.avatar,
         }));
         closeActiveModal();
       })
