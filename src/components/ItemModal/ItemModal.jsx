@@ -13,7 +13,7 @@ function ItemModal({ isOpen, onClose, card, handleCardDelete, isLoggedIn }) {
       <div className="modal__content modal__content_type_image">
         <button
           onClick={onClose}
-          class="modal__close modal__close-preview"
+          className="modal__close modal__close-preview"
         ></button>
         <img src={card.imageUrl} alt={card.name} className="modal__image" />
         <div className="modal__footer">

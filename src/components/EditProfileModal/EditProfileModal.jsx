@@ -20,8 +20,8 @@ const EditProfileModal = ({ isOpen, onClose, handleEdit }) => {
 
   useEffect(() => {
     if (isOpen && currentUser) {
-      setName(currentUser.name || "");
-      setImageUrl(currentUser.avatar || "");
+      setName(currentUser?.name || "");
+      setImageUrl(currentUser?.imageUrl || "");
     }
   }, [isOpen, currentUser]);
 

@@ -176,12 +176,17 @@ function App() {
     api
       .editUser(name, imageUrl, token)
       .then((updatedUser) => {
-        console.log("API response:", updatedUser);
-        setCurrentUser(updatedUser.data);
+        console.log("API Response", updatedUser);
+        setCurrentUser((prevUser) => ({
+          ...prevUser,
+          name: updatedUser.name,
+          imageUrl: updatedUser.avatar,
+        }));
         closeActiveModal();
       })
       .catch((err) => console.error(err));
   };
+
   const handleCardLike = ({ id, isLiked }, toggleLikeIcon) => {
     const token = localStorage.getItem("jwt");
 
