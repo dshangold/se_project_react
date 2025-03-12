@@ -176,11 +176,11 @@ function App() {
     api
       .editUser(name, imageUrl, token)
       .then((updatedUser) => {
-        console.log("API Response", updatedUser);
+        console.log("API Response", updatedUser.data);
         setCurrentUser((prevUser) => ({
           ...prevUser,
-          name: updatedUser.name,
-          imageUrl: updatedUser.avatar,
+          name: updatedUser.data.name,
+          imageUrl: updatedUser.data.avatar,
         }));
         closeActiveModal();
       })
