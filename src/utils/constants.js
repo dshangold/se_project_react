@@ -109,6 +109,11 @@ export const defaultWeatherOptions = {
 //   },
 // ];
 
+export const BASE_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://api.wtwr.punkassgamers.com"
+    : "http://localhost:3001";
+
 export const coordinates = {
   latitude: 40.7685,
   longitude: -73.9822,
